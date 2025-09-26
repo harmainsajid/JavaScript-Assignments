@@ -1,3 +1,4 @@
+// VARIABLES FOR NUMBERS
 // Q1
 let age = 20;
 alert("I am " + age + " years old");

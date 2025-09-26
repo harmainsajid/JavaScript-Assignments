@@ -1,3 +1,4 @@
+// ALERTS
 // Q1
 alert("Welcome to our website!");
 

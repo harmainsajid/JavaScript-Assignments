@@ -1,3 +1,4 @@
+// VARIABLES FOR STRINGS
 // Q1
 let userName;
 
