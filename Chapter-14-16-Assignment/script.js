@@ -112,13 +112,44 @@ document.writeln("String" + "</br>" +singleString);
 */
 
 // Q13
-var queue = [];
+let queue = [];
 queue.push("Keyboard");
 queue.push("Mouse");
 queue.push("Printer");
 queue.push("Monitor");
 
-document.writeln(queue.shift()); 
-document.writeln(queue.shift()); 
-document.writeln(queue.shift()); 
-document.writeln(queue.shift()); 
+document.writeln(queue.shift());
+document.writeln(queue.shift());
+document.writeln(queue.shift());
+document.writeln(queue.shift());
+
+// Q14
+let items = [];
+
+items.push("Keyboard");
+items.push("Mouse");
+items.push("Printer");
+items.push("Monitor");
+
+document.writeln("Devices: " + items + "<br><br>");
+
+document.writeln("Out:<br>" + items.pop() + "<br>");
+document.writeln("Out:<br>" + items.pop() + "<br>");
+document.writeln("Out:<br>" + items.pop() + "<br>");
+document.writeln("Out:<br>" + items.pop());
+
+// Q15
+let phoneManufacturers = [
+  "Apple",
+  "Samsung",
+  "Motorola",
+  "Nokia",
+  "Sony",
+  "Haier",
+];
+document.writeln("<select>");
+
+for (let i = 0; i < phoneManufacturers.length; i++) {
+  document.writeln("<option>" + phoneManufacturers[i] + "</option>");
+}
+document.writeln("</select>");

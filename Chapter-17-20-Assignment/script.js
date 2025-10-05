@@ -32,34 +32,34 @@ for (let i = 0; i < fruits.length; i++) {
   console.log("Element at index " + i + " is " + fruits[i]);
 }
 
-// Q6 
+// Q6
 
 document.writeln("<b>Counting:</b><br>");
-for (var i = 1; i <= 15; i++) {
+for (let i = 1; i <= 15; i++) {
   document.writeln(i + ", ");
 }
 document.writeln("<br><br>");
 
 document.writeln("<b>Reverse counting:</b><br>");
-for (var i = 10; i >= 1; i--) {
+for (let i = 10; i >= 1; i--) {
   document.writeln(i + ", ");
 }
 document.writeln("<br><br>");
 
 document.writeln("<b>Even:</b><br>");
-for (var i = 0; i <= 20; i += 2) {
+for (let i = 0; i <= 20; i += 2) {
   document.writeln(i + ", ");
 }
 document.writeln("<br><br>");
 
 document.writeln("<b>Odd:</b><br>");
-for (var i = 1; i < 20; i += 2) {
+for (let i = 1; i < 20; i += 2) {
   document.writeln(i + ", ");
 }
 document.writeln("<br><br>");
 
 document.writeln("<b>Series:</b><br>");
-for (var i = 2; i <= 20; i += 2) {
+for (let i = 2; i <= 20; i += 2) {
   document.writeln(i + "k, ");
 }
 
@@ -71,7 +71,12 @@ var userInput = prompt("Welcome to our bakery. What do you want to order?");
 userInput = userInput.toLowerCase();
 
 if (A.indexOf(userInput) !== -1) {
-  alert(userInput + " is available at index " + A.indexOf(userInput) + " in our bakery.");
+  alert(
+    userInput +
+      " is available at index " +
+      A.indexOf(userInput) +
+      " in our bakery."
+  );
 } else {
   alert("We are sorry. " + userInput + " is not available in our bakery.");
 }
@@ -79,13 +84,34 @@ if (A.indexOf(userInput) !== -1) {
 // Q8
 var A = [24, 53, 78, 91, 12];
 
-var largest = A[0]; 
+let largest = A[0];
 
-for (var i = 1; i < A.length; i++) {
+for (let i = 1; i < A.length; i++) {
   if (A[i] > largest) {
     largest = A[i];
   }
 }
 
-document.write("Array items: " + A + "<br>");
-document.write("The largest number is " + largest);
+document.writeln("Array items: " + A + "<br>");
+document.writeln("The largest number is " + largest);
+
+// Q9
+let A = [24, 53, 78, 91, 12];
+
+let smallest = A[0];
+
+for (let i = 1; i < A.length; i++) {
+  if (A[i] < smallest) {
+    smallest = A[i];
+  }
+}
+
+document.writeln("Array items: " + A + "<br>");
+document.writeln("The smallest number is: " + smallest);
+
+// Q10
+for (let i = 1; i <= 100; i++) {
+  if (i % 5 === 0) {
+    document.writeln(i + "<br>");
+  }
+}
